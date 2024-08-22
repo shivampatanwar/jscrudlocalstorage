@@ -91,6 +91,8 @@
          document.getElementById('updateDescription').value = product.description;
          document.getElementById('updatePrice').value = product.price;
          document.getElementById('updateImage').value = '';
+         document.getElementById('imgdiv').innerHTML= `<img src="${product.image}" alt="${product.name}">`;
+
          updateFormDiv.style.display = 'block';
          formDiv.style.display = 'none';
          addProductBtn.style.display = 'none';
