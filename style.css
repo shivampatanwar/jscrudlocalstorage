@@ -198,6 +198,14 @@ body.update-form-open #updateFormDiv {
         border-radius: 4px;
     }
 
+    #imgdiv img {
+        width: 200px;
+        height: 200px;
+        border-radius: 4px;
+        margin: 0px 0px 20px;
+        object-fit: cover;
+    }
+
 
     
 }
