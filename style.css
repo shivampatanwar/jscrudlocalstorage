@@ -218,6 +218,7 @@ body.update-form-open #updateFormDiv {
     }
     .product{
         width: 26%;
+        height: 470px;
     }
     .add-product-button {
         margin-left: 16px;
