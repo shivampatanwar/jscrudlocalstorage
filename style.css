@@ -175,6 +175,7 @@ body.update-form-open #updateFormDiv {
     }
     .product{
         width: 90%;
+        height: 500px;
     }
 
     body.form-open {
