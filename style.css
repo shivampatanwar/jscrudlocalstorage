@@ -198,14 +198,17 @@ body.update-form-open #updateFormDiv {
     
 }
 
-@media screen and (450px<=width<=930px){
+@media screen and (450px<=width<=1000px){
     .product-container {
         align-items: center;
         width: 100%;
         flex-wrap: wrap;
     }
     .product{
-        width: 30%;
+        width: 26%;
+    }
+    .add-product-button {
+        margin-left: 16px;
     }
 
     
