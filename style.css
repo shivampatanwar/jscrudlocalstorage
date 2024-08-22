@@ -78,6 +78,7 @@ button:hover {
 .product-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     /* margin-top: 20px; */
 
 }
@@ -160,6 +161,7 @@ body.update-form-open #updateFormDiv {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        flex-wrap: nowrap;
     }
     .product{
         width: 90%;
