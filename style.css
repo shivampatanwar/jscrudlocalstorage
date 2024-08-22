@@ -197,3 +197,16 @@ body.update-form-open #updateFormDiv {
 
     
 }
+
+@media screen and (450px<=width<=930px){
+    .product-container {
+        align-items: center;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .product{
+        width: 30%;
+    }
+
+    
+}
