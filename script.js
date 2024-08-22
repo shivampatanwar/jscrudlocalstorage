@@ -48,7 +48,7 @@
          products.push(product);
          localStorage.setItem('products', JSON.stringify(products));
 
-         alert('Product added successfully!');
+         alert(`${product.name} added successfully!`);
          displayProduct(product);
          document.getElementById('productForm').reset();
          formDiv.style.display = 'none';
@@ -132,7 +132,7 @@
 
              // Save updated products to local storage
              localStorage.setItem('products', JSON.stringify(products));
-             alert('Product updated successfully!');
+             alert(`${products[index].name} updated successfully!`);
              updateFormDiv.style.display = 'none';
              addProductBtn.style.display = 'block';
              productContainer.innerHTML = '';
@@ -154,10 +154,11 @@
      const products = JSON.parse(localStorage.getItem('products')) || [];
      const index = products.findIndex(p => p.id === productId);
      if (index !== -1) {
+        let product=products[index];
          products.splice(index, 1);
          localStorage.setItem('products', JSON.stringify(products));
          document.getElementById('productContainer').innerHTML = '';
          products.forEach(displayProduct);
-         alert('Product deleted successfully!');
+         alert(`${product.name} deleted successfully!`);
      }
  }
