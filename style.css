@@ -202,7 +202,7 @@ body.update-form-open #updateFormDiv {
     .product-container {
         align-items: center;
         width: 100%;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     .product{
         width: 30%;
