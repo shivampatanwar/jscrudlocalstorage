@@ -178,6 +178,12 @@ body.update-form-open #updateFormDiv {
         margin-left: 0px;
     }
 
+    .product img {
+        width: 100%;
+        height: 250px;
+        border-radius: 4px;
+    }
+
 
     
 }
