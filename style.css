@@ -136,6 +136,7 @@ body.update-form-open #updateFormDiv {
     background-color: red;
     color: white;
     width: 80px;
+    margin: 20px 0px;
 }
 
 .edit {
