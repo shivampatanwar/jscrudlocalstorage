@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Button to add a new product -->
+    <button id="addProductBtn" class="add-product-button">Add Product</button>
+
+    <!-- Form for adding a new product -->
+    <div id="formDiv" class="formdiv">
+        <form id="productForm">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="button" id="backBtn">Back</button>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Form for updating an existing product -->
+    <div id="updateFormDiv" class="formdiv">
+
+        <form id="updateProductForm">
+            <input type="hidden" id="updateProductId" name="updateProductId">
+            <label for="updateProductName">Product Names:</label>
+            <input type="text" id="updateProductName" name="updateProductName" required>
+
+            <label for="updateDescription">Description:</label>
+            <textarea id="updateDescription" name="updateDescription" required></textarea>
+
+            <label for="updatePrice">Price:</label>
+            <input type="number" id="updatePrice" name="updatePrice" step="0.01" min="0" required>
+
+            <label for="updateImage">Image:</label>
+            <input type="file" id="updateImage" name="updateImage" accept="image/*">
+
+            <div>
+                <button type="submit">Update</button>
+                <button type="button" id="updateBackBtn">Back</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Container for displaying products -->
+    <div id="productContainer" class="product-container">
+        <!-- Products will be dynamically added here -->
+    </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

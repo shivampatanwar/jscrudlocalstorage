@@ -1,0 +1,183 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Add product button styles */
+.add-product-button {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-product-button:hover {
+    background-color: #07690b;
+}
+
+/* Form container styles */
+.formdiv {
+    max-width: 500px;
+    width: 90%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form element styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+button:hover {
+    background-color: #2f7932;
+}
+
+/* Product container styles */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 20px; */
+
+}
+
+/* Individual product styles */
+.product {
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.product p {
+    margin: 6px 0 10px;
+}
+
+/* Styles for centering the form */
+body.form-open {
+    align-items: center;
+    justify-content: center;
+}
+
+body.form-open #formDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for centering the update form */
+body.update-form-open {
+    align-items: center;
+    justify-content: center;
+}
+
+body.update-form-open #updateFormDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for delete and edit buttons */
+.delete {
+    background-color: red;
+    color: white;
+    width: 80px;
+}
+
+.edit {
+    background-color: green;
+    color: white;
+    width: 80px;
+}
+
+/* Hide and show form divs */
+#updateFormDiv {
+    display: none;
+}
+
+#updateProductForm {
+    width: 90%;
+}
+
+
+@media screen and (max-width: 450px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .product{
+        width: 90%;
+    }
+
+    body.form-open {
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    body.update-form-open {
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .add-product-button {
+        margin-left: 0px;
+    }
+
+
+    
+}
